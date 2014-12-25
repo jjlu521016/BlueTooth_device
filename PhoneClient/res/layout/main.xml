@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.example.phoneclient.PSurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <Button
+            android:id="@+id/mtleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dp"
+            android:text="左" 
+            android:textSize="25.0dp"/>
+
+        <Button
+            android:id="@+id/mtright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mtleft"
+            android:layout_marginTop="20.0dp"
+ 			 android:text="右" 
+            android:textSize="25.0dp"/> />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <Button
+            android:id="@+id/mmtop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10.0dp"
+			 android:text="上" 
+            android:textSize="25.0dp"/> />
+
+        <RelativeLayout
+            android:id="@+id/mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mmtop" >
+
+            <Button
+                android:id="@+id/mmleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dp"
+          		android:text="左" 
+            	android:textSize="25.0dp"/> />
+
+            <CheckBox
+                android:id="@+id/midchb"
+                android:layout_width="40.0dp"
+                android:layout_height="40.0dp"
+                android:layout_toRightOf="@id/mmleft" 
+                android:background="@null"
+            	android:button="@null"
+                android:drawableLeft="@drawable/checkbox_bg1"
+                android:textColor="#ffffffff" 
+                android:textSize="25.0dp" />
+
+            <Button
+                android:id="@+id/mmright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/midchb"
+       			android:text="右" 
+            	android:textSize="25.0dp"/> />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/mmbm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mid"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10.0dp"
+            android:text="下" 
+            android:textSize="25.0dp"/> />
+    </RelativeLayout>
+	
+
+	 <Spinner 
+        android:id="@+id/spinner"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="50.0dp"
+		android:background="@drawable/drop_list"
+		android:layout_width="50dp"
+		android:layout_height="20dp"
+		android:layout_centerHorizontal="true"/>
+
+    
+
+</RelativeLayout>

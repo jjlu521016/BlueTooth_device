@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PhoneClient</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="account">请输入PC的IP号</string>
+    <string name="port">请输入PC的端口号</string>
+    <string name="auto_save_password">保存配置</string>
+    <string name="login">连接PC</string>
+
+    <string-array name="spinner_items">
+        <item>  X 1</item>
+        <item>  X 2</item>
+        <item>  X 3</item>
+        <item>  X 4</item>
+        <item>  X 5</item>
+        <item>  X 6</item>
+        <item>  X 7</item>
+        <item>  X 8</item>
+        <item>  X 9</item>
+        <item>  X 10</item>
+    </string-array>
+
+</resources>
